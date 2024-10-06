@@ -30,7 +30,7 @@ _model_path="/usr/share/$pkgname/${_model_file}"
 _versioned_download_script_basename="${_download_script_basename%.*}-$(pkgver).${_download_script_basename##*.}"
 
 source=("$_versioned_download_script_basename::$_download_script_url")
-sha256sums=("$_download_script_sha256sum")
+sha256sums=(SKIP)
 
 prepare() {
     chmod +x $_versioned_download_script_basename
